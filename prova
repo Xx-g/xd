@@ -1,0 +1,38 @@
+senai;
+
+import br.senai.model.Evento;
+
+public class Main {
+    public static void main(String[] args) {
+
+        Evento evento1 = new Evento();
+        evento1.setNome("baladinha xdxd");
+        evento1.setData("23/08");
+        evento1.setClientes("jorge", "8007418000800", "48988848484", "jorge@gmail.com");
+        evento1.setClientes("jogi", "8008008563800", "48984748484", "jogi@gmail.com");
+        evento1.setClientes("jorel", "8009008000789", "48989848484", "jorel@gmail.com");
+        evento1.setClientes("rian", "8009008000800", "48984248484", "rian@gmail.com");
+        evento1.setClientes("crauser", "1008008000800", "41984848484", "crauser2@gmail.com");
+        System.out.println(evento1);
+
+        Evento evento2 = new Evento();
+        evento2.setNome("nova baladinha dxdx");
+        evento2.setData("08/08");
+        evento2.setClientes("cleber", "9998046460800", "48942948484", "cleber@gmai.com");
+        evento2.setClientes("robson", "1118046460800", "48945648484", "robson@gmai.com");
+        evento2.setClientes("luan", "2228046460800", "48946541584", "luan@gmai.com");
+        evento2.setClientes("sergio", "3338046460800", "48946548984", "sergio@gmai.com");
+        evento2.setClientes("valdinei", "6668046460800", "48946547884", "valdinei@gmai.com");
+        System.out.println(evento2);
+
+        Evento evento3 = new Evento();
+        evento3.setNome(" sem criatividade xd");
+        evento3.setData("12/09");
+        evento3.setClientes("gael", "9998046460786", "48942948411", "gael@gmai.com");
+        evento3.setClientes("guin", "1118046460455", "48945648422", "guin@gmai.com");
+        evento3.setClientes("lucatiel", "2228046460154", "48946541533", "lacatiel@gmai.com");
+        evento3.setClientes("aldrich", "3338046460265", "48946548966", "aldrich@gmai.com");
+        evento3.setClientes("guilherme", "6668046460329", "48946547844", "guilherme@gmai.com");
+        System.out.println(evento3);
+    }
+}
