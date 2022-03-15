@@ -1,0 +1,54 @@
+package br.senai.model;
+
+
+import java.util.ArrayList;
+
+public class Evento {
+    private String nome;
+    private String data;
+    private ArrayList<Cliente> clientes;
+
+    public Evento(){
+        clientes = new ArrayList<>();
+    }
+
+
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public String getData() {
+        return data;
+    }
+
+    public void setData(String data) {
+        this.data = data;
+    }
+
+    public ArrayList<Cliente> getClientes() {
+        return clientes;
+    }
+
+    public void setClientes(String nome, String cpf, String telefone, String email){
+        Cliente cliente = new Cliente();
+        cliente.setNome("nome");
+        cliente.setCpf("00000000000");
+        cliente.setTelefone("0000000000");
+        cliente.setEmail("jorge@gmail.com");
+        clientes.add(cliente);
+
+    }
+
+
+    @Override
+    public String toString() {
+        return "\n\nEvento: " +
+                "\nnome: " + nome +
+                "\ndata: " + data +
+                "\ncliente: " + clientes ;
+    }
+}
